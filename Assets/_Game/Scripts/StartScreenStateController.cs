@@ -1,4 +1,8 @@
-﻿using Tofunaut.TofuUnity;
+﻿using System.IO;
+using System.Net;
+using Tofunaut.TofuUnity;
+using UnityEditor;
+using UnityEngine;
 
 namespace Tofunaut.AnPrimTheGame
 {
@@ -9,15 +13,13 @@ namespace Tofunaut.AnPrimTheGame
     
     public class StartScreenStateController : AppStateController<StartScreenStateController, StartScreenStateModel>
     {
-        private void Start()
+        private async void Start()
         {
             Complete();
         }
         
-        public override void SetModel(StartScreenStateModel model)
+        public override async void SetModel(StartScreenStateModel model)
         {
-            base.SetModel(model);
-
             IsReady = true;
         }
     }
