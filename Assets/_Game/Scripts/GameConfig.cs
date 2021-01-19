@@ -49,12 +49,12 @@ namespace Tofunaut.AnPrimTheGame
             var streamReader = new StreamReader(responseStream);
             var content = await streamReader.ReadToEndAsync();
 
-            var asset = UnityEditor.AssetDatabase.FindAssets("t:AppConfig").Select(x =>
+            var asset = UnityEditor.AssetDatabase.FindAssets("t:GameConfig").Select(x =>
                 UnityEditor.AssetDatabase.LoadAssetAtPath<GameConfig>(UnityEditor.AssetDatabase.GUIDToAssetPath(x))).FirstOrDefault();
 
             if (!asset)
             {
-                Debug.LogError("no app config asset in project");
+                Debug.LogError("no game config asset in project");
                 return;
             }
 

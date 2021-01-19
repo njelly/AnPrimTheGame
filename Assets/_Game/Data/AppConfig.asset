@@ -17,3 +17,9 @@ MonoBehaviour:
     - Name: Player
       ColliderSize: {x: 1, y: 1}
       MoveSpeed: 5
+    - Name: Mushroom
+      ColliderSize: {x: 1, y: 1}
+      MoveSpeed: 0
+    - Name: FunnyMushroom
+      ColliderSize: {x: 1, y: 1}
+      MoveSpeed: 0
