@@ -23,3 +23,6 @@ MonoBehaviour:
     - Name: FunnyMushroom
       ColliderSize: {x: 1, y: 1}
       MoveSpeed: 0
+    - Name: Bunny
+      ColliderSize: {x: 1, y: 1}
+      MoveSpeed: 6
