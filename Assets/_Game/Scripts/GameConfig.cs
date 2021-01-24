@@ -17,6 +17,7 @@ namespace Tofunaut.AnPrimTheGame
             public class Actor
             {
                 public string Name;
+                public string ActorViewPath;
                 public Vector2Int ColliderSize;
                 public float MoveSpeed;
             }

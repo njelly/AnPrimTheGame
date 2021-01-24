@@ -23,7 +23,10 @@ namespace Tofunaut.AnPrimTheGame
         private async void Start()
         {
             var startScreenStateModel = new StartScreenStateModel();
-            var gameStateModel = new GameStateModel();
+            var gameStateModel = new GameStateModel
+            {
+                gameConfigReference = "Assets/_Game/Data/AppConfig.asset",
+            };
 
             while (true)
             {

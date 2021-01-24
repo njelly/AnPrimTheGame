@@ -15,14 +15,18 @@ MonoBehaviour:
   config:
     Actors:
     - Name: Player
+      ActorViewPath: DefaultActorView
       ColliderSize: {x: 1, y: 1}
       MoveSpeed: 5
     - Name: Mushroom
+      ActorViewPath: DefaultActorView
       ColliderSize: {x: 1, y: 1}
       MoveSpeed: 0
     - Name: FunnyMushroom
+      ActorViewPath: DefaultActorView
       ColliderSize: {x: 1, y: 1}
       MoveSpeed: 0
     - Name: Bunny
+      ActorViewPath: DefaultActorView
       ColliderSize: {x: 1, y: 1}
       MoveSpeed: 6
