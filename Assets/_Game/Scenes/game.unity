@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 754712635}
   - component: {fileID: 754712636}
   - component: {fileID: 754712637}
+  - component: {fileID: 754712638}
   m_Layer: 0
   m_Name: GameStateController
   m_TagString: Untagged
@@ -166,6 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21c66f674d744ec2ba276069cdad437d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameRunner: {fileID: 754712638}
 --- !u!114 &754712636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,6 +195,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23018495b7aa20f458bb962e48c8118a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &754712638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754712633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fea83092071d8477ea196e10449e1c9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &843910852
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,6 +216,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 843910853}
+  - component: {fileID: 843910854}
   m_Layer: 0
   m_Name: FunnyMushroom
   m_TagString: Untagged
@@ -224,6 +239,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &843910854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843910852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e15e137f1a0d349e59c51e193eab45f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: FunnyMushroom
+  actorViewPrefab: {fileID: 1550822549}
 --- !u!1001 &1138447844
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -324,6 +353,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1138447844}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1138447846 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8057881682626689333, guid: 504a051434b0c46d39372e3fe47a3907,
+    type: 3}
+  m_PrefabInstance: {fileID: 1138447844}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe8e61c52846d8846b6a241a4e0ec8ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1193968795
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,6 +374,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1193968796}
+  - component: {fileID: 1193968797}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -355,6 +397,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1193968797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193968795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e15e137f1a0d349e59c51e193eab45f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Player
+  actorViewPrefab: {fileID: 8057881683552999649}
 --- !u!1001 &1550822547
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -455,6 +511,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1550822547}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1550822549 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8057881682626689333, guid: 504a051434b0c46d39372e3fe47a3907,
+    type: 3}
+  m_PrefabInstance: {fileID: 1550822547}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe8e61c52846d8846b6a241a4e0ec8ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1710068854
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,6 +532,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1710068855}
+  - component: {fileID: 1710068856}
   m_Layer: 0
   m_Name: Mushroom
   m_TagString: Untagged
@@ -486,6 +555,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1710068856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710068854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e15e137f1a0d349e59c51e193eab45f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorName: Mushroom
+  actorViewPrefab: {fileID: 1138447846}
 --- !u!4 &2035982803 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8057881682626689331, guid: 504a051434b0c46d39372e3fe47a3907,
@@ -665,3 +748,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 504a051434b0c46d39372e3fe47a3907, type: 3}
+--- !u!114 &8057881683552999649 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8057881682626689333, guid: 504a051434b0c46d39372e3fe47a3907,
+    type: 3}
+  m_PrefabInstance: {fileID: 8057881683552999648}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe8e61c52846d8846b6a241a4e0ec8ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

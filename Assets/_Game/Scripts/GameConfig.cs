@@ -19,6 +19,7 @@ namespace Tofunaut.AnPrimTheGame
                 public string Name;
                 public string ActorViewPath;
                 public Vector2Int ColliderSize;
+                public Vector2Int ColliderOffset;
                 public float MoveSpeed;
             }
 
@@ -28,7 +29,7 @@ namespace Tofunaut.AnPrimTheGame
         public Config config;
         
         #if UNITY_EDITOR
-        [UnityEditor.MenuItem("Tofunaut/Import Config")]
+        [UnityEditor.MenuItem("AnPrimTheGame/Import Config")]
         public static async void Import()
         {
             const string key = "9ae209d5-894d-4257-9297-844a45202f43";

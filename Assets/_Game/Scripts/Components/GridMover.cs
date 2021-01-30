@@ -1,7 +1,7 @@
 ﻿namespace Tofunaut.AnPrimTheGame.Components
 {
-    public struct Actor
+    public struct GridMover
     {
-        public int ModelHashCode;
+        public float MoveSpeed;
     }
 }

@@ -36,7 +36,7 @@ namespace Tofunaut.AnPrimTheGame
         private unsafe void OnActorAdded(OnComponentAddedEvent<Actor> evt)
         {
             var actor = GameRunner.ECS.CurrentFrame.Get<Actor>(evt.entity);
-            var actorModel = GameRunner.Config.Actors.FirstOrDefault(x => x.Name.GetHashCode() == actor->modelHashCode);
+            var actorModel = GameRunner.Config.Actors.FirstOrDefault(x => x.Name.GetHashCode() == actor->ModelHashCode);
         }
     }
 }

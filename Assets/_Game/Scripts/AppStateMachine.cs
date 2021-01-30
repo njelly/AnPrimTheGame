@@ -25,7 +25,7 @@ namespace Tofunaut.AnPrimTheGame
             var startScreenStateModel = new StartScreenStateModel();
             var gameStateModel = new GameStateModel
             {
-                gameConfigReference = "Assets/_Game/Data/AppConfig.asset",
+                GameConfigReference = "Assets/_Game/Data/AppConfig.asset",
             };
 
             while (true)

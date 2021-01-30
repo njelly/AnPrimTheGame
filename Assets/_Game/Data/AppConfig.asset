@@ -17,16 +17,20 @@ MonoBehaviour:
     - Name: Player
       ActorViewPath: DefaultActorView
       ColliderSize: {x: 1, y: 1}
+      ColliderOffset: {x: 0, y: 0}
       MoveSpeed: 5
     - Name: Mushroom
       ActorViewPath: DefaultActorView
       ColliderSize: {x: 1, y: 1}
+      ColliderOffset: {x: 0, y: 0}
       MoveSpeed: 0
     - Name: FunnyMushroom
       ActorViewPath: DefaultActorView
       ColliderSize: {x: 1, y: 1}
+      ColliderOffset: {x: 0, y: 0}
       MoveSpeed: 0
     - Name: Bunny
       ActorViewPath: DefaultActorView
       ColliderSize: {x: 1, y: 1}
+      ColliderOffset: {x: 0, y: 0}
       MoveSpeed: 6
